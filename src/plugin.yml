@@ -1,0 +1,43 @@
+name: PrisonCore
+version: 1.0
+main: com.ome_r.PrisonCore
+depend: [Vault, WorldEdit, PlaceholderAPI]
+author: [OmerBenGera]
+permissions:
+  prisoncore.*:
+    description: Gives access to manage prisoncore.
+    children:
+      prisoncore.shops.*: true
+      prisoncore.mines.*: true
+      prisoncore.multi.*: true
+      prisoncore.economy: true
+      prisoncore.reload: true
+      prisoncore.blockedcommands: true
+      prisoncore.kit.*: true
+      prisoncore.warp.*: true
+  prisoncore.shops.*:
+    description: Gives access to manage shops.
+    children:
+      prisoncore.shops.create: true
+      prisoncore.shops.delete: true
+      prisoncore.shops.help: true
+      prisoncore.shops.info: true
+      prisoncore.shops.list: true
+      prisoncore.shops.set: true
+      prisoncore.shops.setmine: true
+  prisoncore.mines.*:
+    description: Gives access to manage mines.
+    children:
+      prisoncore.mines.create: true
+      prisoncore.mines.delete: true
+      prisoncore.mines.help: true
+      prisoncore.mines.info: true
+      prisoncore.mines.list: true
+      prisoncore.mines.reset: true
+      prisoncore.mines.set: true
+      prisoncore.mines.setdelay: true
+  prisoncore.multi.*:
+    description: Gives access to manage multipliers.
+    children:
+      prisoncore.multi.help: true
+      prisoncore.multi.set: true

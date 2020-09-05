@@ -1,0 +1,39 @@
+#####################################################################
+##                                                                 ##
+##  Placeholders                                                   ##
+##  %player%, %rankup%, %rank%                                     ##
+##                                                                 ##
+##                                                                 ##
+##  Custom Commands                                                ##
+##  $broadcast <message> - Sends a message to online players.      ##
+##  $message <message> - Sends a message to the player.            ##
+##  $actionbar <message> - Sends an action bar to the player.      ##
+##  $title <mainTitle>, <subTitle> - Sends a title to the player.  ##
+##                                                                 ##
+#####################################################################
+
+rankups:
+  A:
+    prefix: '&8[&aA&8] &r'
+    group: A
+    level: 1
+    price: 0.0
+    commands:
+    - $broadcast &6&lPrisonCore &7%player% ranked up to %rankup%
+    - $message &6&lPrisonCore &7Congrats! You ranked up to %rankup%
+    - $actionbar &aYou ranked up to %rankup%
+    - $title &6&lCongratulations!, &7You ranked up to %rankup%
+    - perm player %player% addgroup %rankup%
+    - perm player %player% removegroup %rank%
+  B:
+    prefix: '&8[&eB&8] &r'
+    group: B
+    level: 2
+    price: 1000.0
+    commands:
+    - $broadcast &6&lPrisonCore &7%player% ranked up to %rankup%
+    - $message &6&lPrisonCore &7Congrats! You ranked up to %rankup%
+    - $actionbar &aYou ranked up to %rankup%
+    - $title &6&lCongratulations!, &7You ranked up to %rankup%
+    - perm player %player% addgroup %rankup%
+    - perm player %player% removegroup %rank%

@@ -1,0 +1,28 @@
+#Interval time between saves in seconds
+save-interval: 600
+
+#MySQL Database Information
+mysql:
+  hostname: 'localhost'
+  port: '3306'
+  database: ''
+  username: ''
+  password: ''
+
+#Scoreboard
+scoreboard:
+  interval: 10
+  title: '%animation:title%'
+  lines:
+  - '&8&m--------------------'
+  - '&e Balance: &7%money%'
+  - '&e Rank: &7%rank%'
+  - '&e Next Rank: &7%rankup%'
+  - '&e Mine: &7%mine%'
+  - '&8&m--------------------'
+
+blocked-commands:
+# COMMAND:MESSAGE (BYPASS_PERMISSION = prisoncore.%COMMAND%, prisoncore.blockedcommands)
+- ?;NO_PERMISSION
+- plugins;NO_PERMISSION
+- pl;NO_PERMISSION
